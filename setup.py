@@ -24,7 +24,7 @@ requires = ['pyramid >1.3, <1.5.99',
 
 setup(name=name.replace('_', '-'),
       version=version,
-      description='Minify your html page',
+      description='Minify your html pages for Pyramid',
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
           "Programming Language :: Python",
