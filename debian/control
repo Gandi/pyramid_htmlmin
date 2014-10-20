@@ -1,0 +1,18 @@
+Source: pyramid-htmlmin
+Priority: optional
+Section: python
+Maintainer: Nicolas Chipaux <aegiap@gandi.net>
+Build-Depends: debhelper (>= 8),
+ python (>= 2.6),
+ python-pyramid (>> 1.3),
+ python-htmlmin (>= 0.1.5),
+Build-Depends-Indep: python-setuptools
+Standards-Version: 3.9.3
+X-Python-Version: >= 2.7
+
+Package: python-pyramid-htmlmin
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Provides: ${python:Provides}
+Description: htmlmin binding for pyramid
+ minify your html output

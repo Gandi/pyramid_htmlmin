@@ -1,0 +1,11 @@
+Format: http://dep.debian.net/deps/dep5
+Upstream-Name: pyramid-htmlmin
+Source: https://github.com/Gandi/pyramid_htmlmin
+
+Files: *
+Copyright: 2014 Gandi.net
+License: GPL-2
+
+License: GPL-2
+ See /usr/share/common-licenses/GPL-2
+ 

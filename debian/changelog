@@ -1,0 +1,11 @@
+pyramid-htmlmin (0.2) unstable; urgency=medium
+
+  * New release
+
+ -- Nicolas Chipaux <aegiap@gandi.net>  Mon, 20 Oct 2014 16:30:10 +0200
+
+pyramid-htmlmin (0.1) unstable; urgency=low
+
+  * Initial packaging
+
+ -- Nicolas Chipaux <aegiap@gandi.net>  Mon, 13 Oct 2014 14:51:04 +0000
