@@ -10,7 +10,7 @@ from pyramid.request import Response
 from pyramid.settings import asbool
 from htmlmin import minify
 
-__version__ = '0.2'
+__version__ = '0.3~dev'
 
 log = logging.getLogger(__name__)
 htmlmin_opts = {}
@@ -19,7 +19,8 @@ def htmlmin_tween_factory(handler, registry):
     def tween_view(request):
         response = handler(request)
         try:
-            if response.content_type.startswith('text/html'):
+            if (response.content_type and
+                    response.content_type.startswith('text/html')):
                 response.text = minify(response.text, **htmlmin_opts)
         except Exception:
             log.exception('Unexpected exception while minifying content')
