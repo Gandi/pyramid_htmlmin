@@ -1,3 +1,9 @@
+pyramid-htmlmin (0.3) unstable; urgency=medium
+
+  * New release
+
+ -- Guillaume Gauvrit <guillaume@gandi.net>  Thu, 21 Jan 2015 14:59:07 +0200
+
 pyramid-htmlmin (0.2) unstable; urgency=medium
 
   * New release

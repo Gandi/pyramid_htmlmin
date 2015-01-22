@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.3
+---
+
+* don't raise when the content type response is not set.
+
 0.2
 ---
 
