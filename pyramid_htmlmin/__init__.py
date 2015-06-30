@@ -5,15 +5,17 @@ Binding betwen Pyramid and htmlmin
 
 import logging
 
-from pyramid.tweens import EXCVIEW
+from pyramid.tweens import INGRESS
 from pyramid.request import Response
 from pyramid.settings import asbool
 from htmlmin import minify
 
-__version__ = '0.3'
+
+__version__ = '0.4'
 
 log = logging.getLogger(__name__)
 htmlmin_opts = {}
+
 
 def htmlmin_tween_factory(handler, registry):
     def tween_view(request):
@@ -39,4 +41,4 @@ def includeme(config):
             log.debug('Setup %s = %s' % (key, val))
             htmlmin_opts[key[8:]] = asbool(val) 
 
-    config.add_tween('pyramid_htmlmin.htmlmin_tween_factory', under=EXCVIEW)
+    config.add_tween('pyramid_htmlmin.htmlmin_tween_factory', under=INGRESS)
