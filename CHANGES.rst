@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.4 (2015-05-15)
+0.4 (2015-06-30)
 ----------------
 
  * Minified exceptions renderered pages too
