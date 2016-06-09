@@ -6,7 +6,6 @@ Binding betwen Pyramid and htmlmin
 import logging
 
 from pyramid.tweens import INGRESS
-from pyramid.request import Response
 from pyramid.settings import asbool
 from htmlmin import minify
 
