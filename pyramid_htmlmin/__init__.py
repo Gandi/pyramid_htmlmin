@@ -17,6 +17,11 @@ log = logging.getLogger(__name__)
 htmlmin_opts = {}
 
 
+def accepts_gzipped(request):
+    return 'gzip' in [encoding.strip() for encoding in
+                      request.headers['Accept-Encoding'].split(',')]
+
+
 def htmlmin_tween_factory(handler, registry):
     def tween_view(request):
         response = handler(request)
@@ -24,6 +29,9 @@ def htmlmin_tween_factory(handler, registry):
             if (response.content_type and
                     response.content_type.startswith('text/html')):
                 response.text = minify(response.text, **htmlmin_opts)
+                if accepts_gzipped(response):
+                    response.encode_content('gzip')
+
         except Exception:
             log.exception('Unexpected exception while minifying content')
         return response
