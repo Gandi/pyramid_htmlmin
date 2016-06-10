@@ -22,3 +22,4 @@ Usage::
     # htmlmin.reduce_boolean_attributes = False
     # htmlmin.remove_optional_attribute_quotes = True
     # htmlmin.keep_pre = False
+    # htmlmin.gzip_if_accepted = True
