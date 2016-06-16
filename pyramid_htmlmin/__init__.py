@@ -10,7 +10,7 @@ from pyramid.settings import asbool
 from htmlmin import minify
 
 
-__version__ = '0.4'
+__version__ = '0.5'
 
 log = logging.getLogger(__name__)
 htmlmin_opts = {}

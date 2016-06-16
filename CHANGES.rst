@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.5 (2015-06-16)
+----------------
+
+ * Minified in gzip the response if possible
+
+
 0.4 (2015-06-30)
 ----------------
 
